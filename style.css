@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+#root{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    width: 310px;
+    min-height: 360px;
+    border-radius: 10px; 
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 11;
+}
+
+#inp{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#aa{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+#searchInp{
+    width: 1000px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 0 0 0 10px ;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:focus-visible {
+    outline: none;
+}
+
+.card>h2{
+    background-color: rgba(0, 0, 0, 0.528);
+    color: #fff;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    transition: 500ms;
+}
+.card>p{
+    background-color: rgba(0, 0, 0, 0.528);
+    color: #fff;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    transition: 1s;
+}
+.card:hover>p{
+    top: 0;
+}
+
+.card:hover>h2{
+    bottom: 0;
+}
+.mov-card{
+    width: 310px;
+    min-height: 450px;
+    border-radius: 10px;
+    background-color: #ffffff5e;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mov-container{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.description{
+    width: 650px;
+    min-height: 400px;
+    border-radius: 20px;
+    background-color: #d2d2d25b;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    background-repeat: no-repeat;
+    
+}
+
+#a{
+    color: #ffffff;
+    margin-left: 47%;
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+}
+
+.vid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div_info{
+    color: #e4dcdcd7;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
+
+}
+.div_info>h2{
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.video{
+    width: 500px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.actors{
+    width: 1280px;
+    margin: 200px;
+    margin-left: 200px;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    z-index: 222;
+    background-color: #d2d2d22a;
+}
+
+.divAct>img{
+    width: 310px;
+    height: 400px;
+    padding: 10px;
+    object-fit: cover;
+}
+.divAct>h3{
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+#zoom{
+    position: absolute;
+    top: 275px;
+    left: 300px;
+    width: 70px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffffff9e;
+    color: #00000072;
+    transition: 500ms;
+}
+#zoom:hover{
+    background-color: #0000008d;
+    color: #fff;
+}
